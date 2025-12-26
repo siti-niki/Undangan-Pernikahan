@@ -289,7 +289,7 @@
         // Auto-run when page loads
         document.addEventListener("DOMContentLoaded", () => {
             loadRSVP();
-            setInterval(loadRSVP, 5000); // auto update every 5 seconds
+            setInterval(loadRSVP, 15000); // auto update every 5 seconds
         });
         // === MUSIK ===
         const music = document.getElementById("music");
@@ -334,7 +334,7 @@
         }
 
         // --- Listener: play musik saat user scroll atau klik pertama kali ---
-        const firstPlayEvents = ["scroll", "click", "mousemove", "keydown"];
+        const firstPlayEvents = ["click", "scroll", "touchstart"];
         firstPlayEvents.forEach(evt => {
             document.addEventListener(evt, triggerFirstPlay, {
                 once: true
