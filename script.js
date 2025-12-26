@@ -157,9 +157,9 @@
         /* ==========================
            KONFIGURASI UMUM
            ========================== */
-        const DEFAULT_SHEET_ID = "1Ea30xRm9JGPyAXT-w--eEm589-fc30ky6DQaBpIfF30"; // default spreadsheet kamu
+        const DEFAULT_SHEET_ID = "14NTRvlDixP9J88xGer8XmESNhxOx0ZsWzlWcIde6YGQ"; // default spreadsheet kamu
         const DEFAULT_SHEET_NAME = ""; // kosong = ambil sheet pertama
-        const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyi4JnOqX1zpZVOOFqXDsV2Mo20xKCK1O1DIvorL88t_bFJhJRTUeQFl1-76gQzh1MDwg/exec"; // ganti dgn URL Apps Script universal kamu
+        const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyoZaYC2pPo85zzJ2YCN5IA2NHsJH1LpfwxF63wwz7Wr9clRj4gEOAVs122pkCki4al/exec"; // ganti dgn URL Apps Script universal kamu
 
         // 🔹 Ambil sheetId & sheetName dari URL (kalau ada)
         const urlParams = new URLSearchParams(window.location.search);
