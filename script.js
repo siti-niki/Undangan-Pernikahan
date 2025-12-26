@@ -241,8 +241,8 @@
 
                     // === Hitung total / hadir / tidak hadir ===
                     const totalGuests = records.length;
-                    const totalHadir = records.filter(r => r.kehadiran === "Hadir✅").length;
-                    const totalTidak = records.filter(r => r.kehadiran === "Tidak Hadir❌").length;
+                    const totalHadir = records.filter(r => r.kehadiran === "Attend").length;
+                    const totalTidak = records.filter(r => r.kehadiran === "Not Attend").length;
 
                     // === Tampilkan ke HTML ===
                     totalCount.textContent = totalGuests; // ✅ TOTAL GUEST FIXED
@@ -271,8 +271,9 @@
               ${r.kehadiran === "Attend" ? `<span class="badge-verify">✔</span>` : ""}
               <strong>${r.nama}</strong>
             </div>
-
-            <span class="ucapan-status">${r.kehadiran}</span>
+            <span class="ucapan-status ${r.kehadiran === "Attend" ? "hadir" : "tidak-hadir"}">
+            ${r.kehadiran === "Attend" ? "✔ Hadir" : "✖ Tidak Hadir"}
+            </span>
           </div>
 
           <div class="ucapan-time">${r.timestamp || ""}</div>
