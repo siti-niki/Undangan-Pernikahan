@@ -293,7 +293,7 @@
             height: 480px;
             border-radius: 12px;
             object-fit: cover;
-            object-position: center 10%;
+            object-position: center 50%;
         }
 
         .person-info {
