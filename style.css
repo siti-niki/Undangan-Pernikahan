@@ -12,7 +12,7 @@
             inset: 0;
             width: 100%;
             height: 100vh;
-            background: url('images/cover.webp') center/cover no-repeat;
+            background-color: #111; /* fallback */
             z-index: 99;
             transition: transform 1s ease;
             display: flex;
@@ -20,6 +20,16 @@
             justify-content: center;
             overflow: hidden;
         }
+
+        .cover-img {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 0;
+        }
+
 
         #cover.hide {
             transform: translateY(-100%);
