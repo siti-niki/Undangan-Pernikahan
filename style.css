@@ -392,7 +392,7 @@
         /* ===================== WEDDING EVENT ===================== */
 
         .wedding-event-section {
-            padding: 70px 25px 90px;
+            padding: 30px 25px 70px;
             text-align: center;
             background: #fff;
         }
@@ -400,7 +400,8 @@
         .event-title {
             font-family: "Playfair Display", serif;
             font-size: 1.9rem;
-            margin-bottom: 40px;
+            margin-top: 0;
+            margin-bottom: 24px;
             color: #3a3a3a;
         }
 
@@ -434,7 +435,7 @@
         .event-type {
             font-family: "Playfair Display", serif;
             font-size: 1.6rem;
-            margin-bottom: 16px;
+            margin-bottom: 20px;
             color: #7a623c;
         }
 
@@ -471,13 +472,35 @@
             opacity: 0.8;
         }
 
+        .event-pembukaan {
+            font-size: 0.85rem;
+            line-height: 1.6;
+            margin-bottom: 5px;
+        }
+
         .event-place {
             font-size: 0.85rem;
             margin: 12px 0;
             line-height: 1.5;
         }
 
+        .event-hiburan {
+            font-size: 0.85rem;
+            line-height: 1.6;
+        }
+
+        .event-penutup {
+            font-size: 0.85rem;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+
         /* MAP BUTTON */
+        .map-container {
+            margin-top: 20px;
+            border-radius: 12px;
+            overflow: hidden;
+        }
 
         .map-btn {
             display: inline-block;
@@ -495,17 +518,11 @@
             background: #b3853b;
         }
         
-        iframe {
-            width: 100%;
-            height: 300px;
-            border-radius: 15px;
-            border: 0;
-        }
 
         /* ===================== EVENT COUNTDOWN ===================== */
 
-        .countdown-section {
-            padding: 70px 25px 90px;
+        .count-down-section {
+            padding: 50px 25px 90px;
             background: #fff;
             text-align: center;
         }
@@ -631,12 +648,12 @@
             padding-bottom: 2px !important;
         }
 
-        #bride-groom {
+        #bridegroom {
             padding-top: 2px !important;
             padding-bottom: 2px !important;
         }
 
-        #event-section {
+        #wedding-event {
             padding-top: 2px !important;
             padding-bottom: 2px !important;
         }
@@ -717,10 +734,10 @@
 
         .container-limit,
         section,
-        .best-moment-section,
-        .bride-groom-section,
+        .bridegroom-section,
         .wedding-event-section,
-        .countdown-section {
+        .count-down-section,
+        .best-moment-section {
             width: 100%;
             max-width: 430px;
             /* ⬅️ Batas HP (iPhone/Android standar) */
